@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../CSS/hangman.css">
+    <title>Hangman</title>
+</head>
+<body>
+    <div id="game" class="middle">
+        <div id="hangman">
+            ⠀⠀⠀_______<br>⠀⠀⠀|⠀⠀⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>================
+        </div>
+
+        <div id="letter-field">
+            <div id="word-wrong" class="text">
+                * * * * *
+            </div>
+            <br><br>
+            <div id="word-field" class="text">
+                _ _ _ _ _ _
+            </div>
+        </div>
+
+    </div>
+
+    <br>
+    <h2>What letter belongs to the word above?</h2>
+    <div id="guessing-field" class="middle">
+        <label for="guess">>⠀</label>
+        <input id="guess" type="text" placeholder="???" maxlength="1" autofocus>
+        <button type="button" id="confirm">Confirm</button>
+    </div>
+
+
+    <script src="../../JS/hangman.js"></script>
+</body>
+</html>
