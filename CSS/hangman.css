@@ -10,27 +10,32 @@
 
 
 #game{
-    width: 75vw;
+    width: 90vw;
     box-sizing: border-box;
     padding: 2rem;
-    height: 75vh;
+    min-height: 75vh;
     background-color: aquamarine;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
+    border-radius: 7.5px;
+
 }
 
 #hangman{
-    font-size: 2.3rem;
+    font-size: 2.8rem;
+    height: 350px;
 }
 
 #letter-field{
     margin-left: 10%;
-    min-width: 50%;
+    width: 50%;
+    min-width: 250px;
     display: flex;
     flex-flow: column nowrap;
-    border: 1px solid black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(136, 136, 136);
     box-sizing: border-box;
     padding: 1.5rem;    
     font-size: 2.5vw;
@@ -41,32 +46,96 @@
     font-size: 4vw;
 }
 
+#word-wrong{
+    font-size: 2.5vw;
+}
+
+h2{
+    color: white;
+}
+
 #guessing-field{
-    width: 75vw;
+    width: 90vw;
     min-height: auto;
     box-sizing: border-box;
-    padding: 2rem;
-    background-color: lightcoral;
-    margin-top: 1.7rem;
+    padding: 1.5rem;
+    background-color: rgb(29, 29, 29);
+    margin-top: -1.2vh;
+    border-radius: 25px;
     display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
+    flex-flow: column nowrap;
 }
 
 h2{
     text-align: center;
+    font-size: 2rem;
 }
 
 #guess{
-    height: 30px;
-    width: 20%;
-    background-color: rgb(53, 53, 53);
+    height: 40px;
+    width: 175px;
+    margin: 0 auto;
+    background-color: rgb(29, 29, 29);
+    
     color: white;
     text-align: center;
-    
+    border-radius: 5px;
+    margin-bottom: 1%;
+}
+
+#confirm{
+    position: relative;
+    left: 5%;
+    height: 40px;
+    font-size: 1rem;
+    padding: .6rem  1rem;
+    background-color: lightcoral;
+    color: white;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+#confirm:hover{
+    background-color: rgb(238, 78, 78);
 }
 
 p{
     display: inline-block;
     color: transparent;
+}
+
+@media (max-width: 850px){
+    #game{
+        flex-flow: column nowrap;
+        background-color: rgb(88, 233, 59);
+    }
+
+    #hangman{
+        font-size: 6vw;
+        height: auto;
+    }
+    
+    #letter-field{
+        margin-left: 0;
+        margin-top: 15%;
+        width: 85%;
+    }
+
+    #word-field{
+        font-size: 300%;
+        
+    }
+
+    #word-wrong{
+        font-size: 5vw;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    #guessing-field{
+        padding: 1rem;
+    }
 }
