@@ -8,6 +8,35 @@
     <title>Hangman</title>
 </head>
 <body>
+    <header>
+        <nav id="nav">
+            <ul>
+
+                <li><a class="active" href="./Index.html">PSEEI</a></li>
+
+                <li style="float: right;" class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Atividades⌄</a>
+                    <div class="dropdown-content" id="rightmost">
+                        <a href="#">Forca</a>
+                        <a href="#">Caça-palavras</a>
+                        <a href="#">Jogo Da Velha</a>
+                    </div>
+                </li>
+
+                <li style="float: right;" class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Conteúdo⌄</a>
+                    <div class="dropdown-content">
+                        <a href="#">Simple Past</a>
+                        <a href="#">Simple Present</a>
+                        <a href="#">Simple Future</a>
+                        <a href="#">Grammar</a>
+                    </div>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    
     <div id="game" class="middle">
         <div id="hangman">
             ⠀⠀⠀_______<br>⠀⠀⠀|⠀⠀⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>⠀⠀⠀| <br>================
@@ -36,7 +65,15 @@
         </div>
     </div>
 
+    <footer id="footer">
+        <ul>
+            <li style="float: right;"><a href="#">Sobre</a></li>
+            <li style="float: right;"><a href="#">Contato</a></li>
+        </ul>
+    </footer>
 
+
+    <script src="../../JS/Scripts.js"></script>
     <script src="../../JS/hangman.js"></script>
 </body>
 </html>
