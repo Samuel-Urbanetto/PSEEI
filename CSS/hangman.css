@@ -4,13 +4,34 @@
     margin: 0;
 }
 
+@import url('../CSS/GeneralStyling.css');
+
 .middle{
     margin: 0 auto;
 }
 
+.popUp{
+    width: 50vw;
+    height: 40vh;
+    background-color: rgb(29, 29, 29);
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: .4rem;
+    color: white;
+    position: fixed;
+    top: 10vh;
+    left: 25vw;
+    z-index: 99;
+    display: none;
+    font-size: 1.5rem;
+    text-align: center;
+
+}
 
 #game{
     width: 90vw;
+    margin: auto;
     box-sizing: border-box;
     padding: 2rem;
     min-height: 75vh;
@@ -20,12 +41,46 @@
     justify-content: center;
     align-items: center;
     border-radius: 7.5px;
+    position: relative;
+}
 
+.hint-field{
+    width: 15%;
+    min-width: 90px;
+    max-width: 150px;
+    height: 20%;
+    min-height: 35px;
+    max-height: 45px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(29, 29, 29);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .25s ease-in-out;
+}
+
+.hint-field > div{
+    width: 27px;
+    height: 27px;
+    border-radius: 27px;
+    background-color: goldenrod;
+    display: inline-block;
+    transition: .5s ease-in-out;
+}
+
+.hint-field:hover{
+    border-color: rgb(248, 187, 18);
 }
 
 #hangman{
     font-size: 2.8rem;
     height: 350px;
+    position: relative;
+    top: -5px;
 }
 
 #letter-field{
@@ -76,7 +131,7 @@ h2{
     width: 175px;
     margin: 0 auto;
     background-color: rgb(29, 29, 29);
-    
+    border: 1px solid rgb(158, 158, 158);
     color: white;
     text-align: center;
     border-radius: 5px;
@@ -106,14 +161,30 @@ p{
 }
 
 @media (max-width: 850px){
+    .popUp{
+        width: 91vw;
+        left: 2.9vw;
+        top: 20vh;
+    }
+
     #game{
         flex-flow: column nowrap;
-        background-color: rgb(88, 233, 59);
+    }
+
+    .hint-field{
+        max-height: 30px;
+    }
+
+    .hint-field > div{
+        width: 20px;
+        height: 20px;
+        border-radius: 20px;
     }
 
     #hangman{
         font-size: 6vw;
         height: auto;
+        top: 0;
     }
     
     #letter-field{
@@ -123,7 +194,7 @@ p{
     }
 
     #word-field{
-        font-size: 300%;
+        font-size: 275%;
         
     }
 
