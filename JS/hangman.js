@@ -147,7 +147,7 @@ function hint(hints, op){
     let h3 = document.querySelector('#h3');
     let h = parseFloat(getComputedStyle(h1).width) - 15;
 
-    let button = "<br><br> <button type='button' onclick='hint('', 'close')>Ok</button>"
+    let button =`<br> <button type='button' onclick='hint("", "close")'><strong>Ok<strong></button>`
 
     if(hc > 3)
         alert('No hints left');//pop up
@@ -159,22 +159,23 @@ function hint(hints, op){
         h1.style.width = '15px';
         h1.style.marginLeft = h/2 + 'px';
         h1.style.height = '15px';
-        alert(hints1[wIndex][0]);
-        /*popUp.innerHTML = hints[wIndex][0] + button;
-        popUp.style.display = block;*/
+        popUp.innerHTML = hints1[wIndex][0] + button;
+        popUp.style.display = 'block';
     }
     if(hc == 2){
         h2.style.backgroundColor = 'white';
         h2.style.width = '15px';
         h2.style.marginLeft = h/2 + 'px';
         h2.style.height = '15px';
-        alert(hints1[wIndex][1]);
+        popUp.innerHTML = hints1[wIndex][1] + button;
+        popUp.style.display = 'block';
     }
     if(hc == 3){
         h3.style.backgroundColor = 'white';
         h3.style.width = '15px';
         h3.style.marginLeft = h/2 + 'px';
         h3.style.height = '15px';
-        alert(hints1[wIndex][2]);
+        popUp.innerHTML = hints1[wIndex][2] + button;
+        popUp.style.display = 'block';
     }
 }
