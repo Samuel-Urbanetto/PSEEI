@@ -17,7 +17,7 @@ hints1 = [
     ['Everyday starts the same way, first there is the ___', 'I usually skip breakfast, eating in the ___ does not feel right', 'As an early bird, waking up in the ___ just feels right'],
     ['When solving a problem we need to ___', 'Cause is one of its synonyms', 'For what ___ do you think that?'],
     ['In his ___ he found out somehing incredible', 'Our teacher just assigned us for this ___ project', 'Through a thorough ___ scientists have learned that...'],
-    ['It is not craved in stone, but inidividuals with greater ___ have a higher income','You do not know where Antartica is? I see there were some flaws in you ___ sir', 'Federal institute of __ science and technology...'],
+    ['It is not carved in stone, but inidividuals with greater ___ have a higher income','You do not know where Antartica is? I see there were some flaws in you ___ sir', 'Federal institute of __ science and technology...'],
     ['Humans created a system that would allow order in society, it has many rules know as ___s', 'In the name of the ___, stop it!', '___ and order']
 ]
 
