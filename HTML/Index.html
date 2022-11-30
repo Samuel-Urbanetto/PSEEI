@@ -15,35 +15,30 @@
 
 <body>
     <header>
-        <nav id="nav">
-            <ul>
-
-                <li><a class="active" href="./Index.html">PSEEI</a></li>
-
-                <li style="float: right;" class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Atividades⌄</a>
-                    <div class="dropdown-content" id="rightmost">
-                        <a href="./hangman.html">Forca</a>
-                        <a href="#">Caça-palavras</a>
-                        <a href="#">Jogo Da Velha</a>
-                    </div>
-                </li>
-
-                <li style="float: right;" class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Conteúdo⌄</a>
-                    <div class="dropdown-content">
-                        <a href="#">Simple Past</a>
-                        <a href="#">Simple Present</a>
-                        <a href="#">Simple Future</a>
-                        <a href="#">Grammar</a>
-                    </div>
-                </li>
-
-            </ul>
-        </nav>
+        <ul class="nav-list">
+            <li class="logo" style="margin-left: 3vh; font-size: 4vh;">PSEEI</li>
+            <li class="align-right" ><a href="">Conteúdo</a>
+                <ul>
+                    <li><a href="">Simple Past</a></li>
+                    <li><a href="">Simple Present</a></li>
+                    <li><a href="">Simple Future</a></li>
+                    <li><a href="">Grammar</a></li>
+                </ul>
+            </li>
+            <li style="padding-right: 1vw; gap: 0;"><a href="">Atividades</a>
+                <ul>
+                    <li>
+                        <a style="left: auto; right:0;" href="./ATIVIDADES/hangman.html">Jogo Da Forca</a>
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
     </header>
 
     <div id="content">
+
+        <div id="paddingtop"></div>
 
         <h1>Heading Example</h1>
         <h3>subtitle example</h3>
@@ -154,7 +149,7 @@
 
 
     <!--!Keep this here and add another script tag with your game's code when you upload the game(s).-->
-    <script src="../JS/Scripts.js"></script>
+    <script src="../JS/styleJS.js"></script>
 </body>
 
 <footer>
